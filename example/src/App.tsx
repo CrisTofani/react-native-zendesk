@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View } from 'react-native';
-import ZendDesk from '@pagopa/react-native-zendesk';
+import ZendDesk from '@pagopa/io-react-native-zendesk';
 
 export default function App() {
   // const [result, setResult] = React.useState<number | undefined>();

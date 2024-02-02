@@ -1,5 +1,5 @@
 {
-  "name": "@pagopa/react-native-zendesk-example",
+  "name": "@pagopa/io-react-native-zendesk-example",
   "version": "0.0.1",
   "private": true,
   "scripts": {

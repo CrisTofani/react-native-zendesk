@@ -2,7 +2,8 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "@pagopa/react-native-zendesk": ["./src/index"]
+      "@pagopa/io-react-native-zendesk": ["./src/index"],
+      "@pagopa/io-react-native-zendesk/mocks": ["./src/mocks"],
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
