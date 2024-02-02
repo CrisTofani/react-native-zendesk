@@ -1,19 +1,17 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from '@pagopa/react-native-zendesk';
+import { StyleSheet, View } from 'react-native';
+import ZendDesk from '@pagopa/react-native-zendesk';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  // const [result, setResult] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    console.log(ZendDesk);
   }, []);
 
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <View style={styles.container}>{/* <Text>Result: {result}</Text> */}</View>
   );
 }
 

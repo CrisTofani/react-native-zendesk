@@ -1,12 +1,6 @@
-
-#ifdef RCT_NEW_ARCH_ENABLED
-#import "RNReactNativeZendeskSpec.h"
-
-@interface ReactNativeZendesk : NSObject <NativeReactNativeZendeskSpec>
-#else
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import <React/RCTBridgeModule.h>
 
-@interface ReactNativeZendesk : NSObject <RCTBridgeModule>
-#endif
-
+@interface ReactNativeZendesk : NSObject<RCTBridgeModule>
 @end

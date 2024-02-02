@@ -2,6 +2,7 @@ buildscript {
   repositories {
     google()
     mavenCentral()
+    maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
   }
 
   dependencies {
@@ -74,6 +75,7 @@ android {
 repositories {
   mavenCentral()
   google()
+  maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
 }
 
 
@@ -82,5 +84,9 @@ dependencies {
   // For > 0.71, this will be replaced by `com.facebook.react:react-android:$version` by react gradle plugin
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
+  api group: 'com.zendesk', name: 'chat', version: '3.4.0'
+  api group: 'com.zendesk', name: 'answerbot', version: '3.2.0'
+  api group: 'com.zendesk', name: 'messaging', version: '5.4.0'
+  api group: 'com.zendesk', name: 'support', version: '5.2.0'
 }
 
